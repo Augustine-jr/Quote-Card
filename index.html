@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Quote Card</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background: #191920;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .main{
+      width: 320px;
+      height: 400px;
+      display: grid;
+      text-align: center;
+      align-items: center;
+      background: #2f313a;
+    }
+    .main::before{
+      content: '';
+      position: absolute;
+      width: 160px;
+      height: 400px;
+      background: rgba(255, 255, 255, .05)
+    }
+    .quote{
+      padding: 20px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+    .main i{
+      font-size: 90px;
+      color: skyblue;
+      position: relative;
+      top: 20px;
+    }
+    .author{
+      margin-bottom: 30px;
+      font-size: 17px;
+      color: skyblue;
+      text-align: right;
+      margin-right: 20px;
+    }
+  </style>
 </head>
-<body>
 
-  <figure>
-    <img src="./res/Mr David.JPG" alt="">
-    <div>
-      <blockquote>
-        <p>
-          "Hi guys Welcome to My youtube"
-        </p>
-      </blockquote>
+<body>
+  <div class="main">
+    <i class="fa fa-quote-right"></i>
+    <div class="quote">
+      Hi Guys, Welcome to my Youtube channel.
     </div>
-  </figure>
-  
+    <p class="author">~ Mr David</p>
+  </div>
 </body>
+
 </html>
